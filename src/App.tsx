@@ -1651,7 +1651,7 @@ export default function App() {
                       <ZoomOut size={13} />
                     </button>
                     <span className={`text-[9px] font-mono font-bold px-1 min-w-[36px] text-center select-none ${isDarkMode ? 'text-white/80' : 'text-black/80'}`}>
-                      {Math.round(cvZoom * 100)}%
+                      {Math.round((isMobile ? cvZoom / 0.7 : cvZoom) * 100)}%
                     </span>
                     <button
                       onClick={() => setCvZoom(Math.min(2.0, cvZoom + 0.15))}
@@ -1661,8 +1661,8 @@ export default function App() {
                       <ZoomIn size={13} />
                     </button>
                     <button
-                      onClick={() => setCvZoom(1.0)}
-                      className={`px-1.5 py-0.5 text-[8px] font-bold tracking-wider uppercase font-mono rounded transition-colors cursor-pointer ${isDarkMode ? 'hover:bg-white/10 text-white/50 hover:text-white' : 'hover:bg-black/10 text-black/50 hover:text-black'}`}
+                      onClick={() => setCvZoom(isMobile ? 0.7 : 1.0)}
+                      className={`px-1.5 py-0.5 text-[8px] font-bold tracking-wider uppercase font-mono rounded transition-colors cursor-pointer hidden sm:block ${isDarkMode ? 'hover:bg-white/10 text-white/50 hover:text-white' : 'hover:bg-black/10 text-black/50 hover:text-black'}`}
                       title="Reset Zoom"
                     >
                       Reset
