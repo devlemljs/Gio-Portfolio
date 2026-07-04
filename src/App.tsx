@@ -144,7 +144,7 @@ export default function App() {
   const setIsCVModalOpen = (open: boolean) => {
     setShowCvModal(open);
     if (!open) {
-      setCvZoom(1.0);
+      setCvZoom(isMobile ? 0.7 : 1.0);
     }
   };
   const isDarkMode = false;
@@ -170,7 +170,7 @@ export default function App() {
     if (!showCvModal) return;
 
     // Reset zoom back to the clean 100% standard fit when opening
-    setCvZoom(1.0);
+    setCvZoom(isMobile ? 0.7 : 1.0);
 
     const calculateFitZoom = () => {
       if (zoomViewerRef.current) {
@@ -269,9 +269,19 @@ export default function App() {
     setIsSubmitting(true);
 
     // TODO: Paste your Google Apps Script Web App URL here
-    const appScriptUrl = "https://script.google.com/macros/s/AKfycbxDhZ_GtwZ-PlGEueTDVsMqKxKW7Tb9yWjBA9uyhpU7C-mv57f4qhlaZ3fjRsz3kAbu/exec"; // Example: "https://script.google.com/macros/s/AKfyc.../exec"
+    const appScriptUrl = ""; // Example: "https://script.google.com/macros/s/AKfyc.../exec"
 
-  
+    if (!appScriptUrl || appScriptUrl === "") {
+      // Fallback if no URL is provided in .env (simulate success)
+      setTimeout(() => {
+        setIsSubmitting(false);
+        setSubmitSuccess(true);
+        triggerToast(
+          "✉️ Simulated message sent successfully! (No App Script URL configured)",
+        );
+      }, 1200);
+      return;
+    }
 
     try {
       // Using standard form-urlencoded to ensure App Script accepts the payload easily with no-cors
@@ -1297,7 +1307,7 @@ export default function App() {
                     >
                       <span className="p-1.5 bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-100 transition-colors">
                         <img
-                          src= {linkedin}
+                          src={linkedin}
                           alt="LinkedIn"
                           className="w-[14px] h-[14px] object-contain rounded-sm"
                         />
@@ -1314,7 +1324,7 @@ export default function App() {
                     >
                       <span className="p-1.5 bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-100 transition-colors">
                         <img
-                          src= {facebook}
+                          src={facebook}
                           alt="Facebook"
                           className="w-[14px] h-[14px] object-contain rounded-sm"
                         />
@@ -1331,7 +1341,7 @@ export default function App() {
                     >
                       <span className="p-1.5 bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-100 transition-colors">
                         <img
-                          src= {instagram}
+                          src={instagram}
                           alt="Instagram"
                           className="w-[14px] h-[14px] object-contain rounded-sm"
                         />
@@ -1489,7 +1499,7 @@ export default function App() {
                   >
                     <span className="p-2 bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-100 transition-colors">
                       <img
-                        src= {linkedin}
+                        src={linkedin}
                         alt="LinkedIn"
                         className="w-[14px] h-[14px] object-contain rounded-sm"
                       />
@@ -1506,7 +1516,7 @@ export default function App() {
                   >
                     <span className="p-2 bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-100 transition-colors">
                       <img
-                        src= {facebook}
+                        src={facebook}
                         alt="Facebook"
                         className="w-[14px] h-[14px] object-contain rounded-sm"
                       />
@@ -1523,7 +1533,7 @@ export default function App() {
                   >
                     <span className="p-2 bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-100 transition-colors">
                       <img
-                        src= {instagram}
+                        src={instagram}
                         alt="Instagram"
                         className="w-[14px] h-[14px] object-contain rounded-sm"
                       />
