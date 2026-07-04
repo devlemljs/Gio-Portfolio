@@ -51,36 +51,36 @@ const tracker2 = 'projects/tracker2.png';
 
 // Project 3 Placeholders
 const design = 'projects/design.png';
-const social1 = 'projects/social1.png';
-const social2 = 'projects/social2.png';
-const social3 = 'projects/social3.png';
-const social4 = 'projects/social4.png';
+const social1 = 'projects/social1.webp';
+const social2 = 'projects/social2.webp';
+const social3 = 'projects/social3.webp';
+const social4 = 'projects/social4.webp';
 const socials = [social1, social2, social3, social4];
 
-const poster1 = 'projects/poster1.png';
-const poster2 = 'projects/poster2.png';
-const poster3 = 'projects/poster3.png';
-const poster4 = 'projects/poster4.png';
+const poster1 = 'projects/poster1.webp';
+const poster2 = 'projects/poster2.webp';
+const poster3 = 'projects/poster3.webp';
+const poster4 = 'projects/poster4.webp';
 const posters = [poster1, poster2, poster3, poster4];
 
-const signage1 = 'projects/signage1.png';
-const signage2 = 'projects/signage2.png';
-const signage3 = 'projects/signage3.png';
-const signage4 = 'projects/signage4.png';
+const signage1 = 'projects/signage1.webp';
+const signage2 = 'projects/signage2.webp';
+const signage3 = 'projects/signage3.webp';
+const signage4 = 'projects/signage4.webp';
 const signages = [signage1, signage2, signage3, signage4];
 
-const merch1 = 'projects/merch1.png';
-const merch2 = 'projects/merch2.png';
-const merch3 = 'projects/merch3.png';
-const merch4 = 'projects/merch4.png';
+const merch1 = 'projects/merch1.webp';
+const merch2 = 'projects/merch2.webp';
+const merch3 = 'projects/merch3.webp';
+const merch4 = 'projects/merch4.webp';
 const merchandises = [merch1, merch2, merch3, merch4];
 
-const logo1 = 'projects/logo1.png';
-const logo2 = 'projects/logo2.png';
-const logo3 = 'projects/logo3.png';
+const logo1 = 'projects/logo1.webp';
+const logo2 = 'projects/logo2.webp';
+const logo3 = 'projects/logo3.webp';
 const logos = [logo1, logo2, logo3];
 
-const touchpoint = 'projects/touchpoint.png';
+const touchpoint = 'projects/touchpoint.webp';
 
 const OptimizedImage = ({
   src,
