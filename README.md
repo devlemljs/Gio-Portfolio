@@ -149,6 +149,6 @@ This project is intended as a personal portfolio. All content, designs, graphics
 
 **Gio Sabucido**
 
-- Portfolio: https://yourdomain.com
+- Portfolio: https://giosabucido.vercel.app/
 - LinkedIn: https://www.linkedin.com/in/gioanthony03
-- Email: your-email@example.com
+- Email: gio.sabucido@gmail.com
