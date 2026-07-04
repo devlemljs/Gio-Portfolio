@@ -86,11 +86,17 @@ const OptimizedImage = ({
   src,
   alt,
   className,
+  priority = false,
+  width,
+  height,
   ...props
 }: {
   src: string;
   alt: string;
   className?: string;
+  priority?: boolean;
+  width?: number;
+  height?: number;
   [key: string]: any;
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -99,7 +105,15 @@ const OptimizedImage = ({
     <img
       src={src}
       alt={alt}
-      loading="lazy"
+      // Hero/above-the-fold images (priority=true) load eagerly with high
+      // fetch priority so they don't get deprioritized behind other
+      // requests, which is what was inflating LCP. Everything else stays
+      // lazy since it's below the fold.
+      loading={priority ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "auto"}
+      decoding={priority ? "sync" : "async"}
+      width={width}
+      height={height}
       onLoad={() => setIsLoaded(true)}
       onError={(e) => {
         e.currentTarget.style.display = "none";
@@ -178,6 +192,7 @@ export default function ProjectDetailsPage({
                 alt="Amazon Listing Creation System Overview"
                 className="absolute inset-0 w-full h-full object-cover z-10"
                 referrerPolicy="no-referrer"
+                priority
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                 <Layout size={48} className="text-indigo-400 mb-3 animate-pulse" />
@@ -603,6 +618,7 @@ export default function ProjectDetailsPage({
                   alt="Automated Merchandise Inventory Tracker System"
                   className="absolute inset-0 w-full h-full object-cover z-10"
                   referrerPolicy="no-referrer"
+                  priority
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                   <FileSpreadsheet size={48} className="text-indigo-400 mb-3 animate-pulse" />
@@ -746,6 +762,7 @@ export default function ProjectDetailsPage({
                 alt="All-in-One Brand Design & Marketing Overview"
                 className="absolute inset-0 w-full h-full object-cover z-10"
                 referrerPolicy="no-referrer"
+                priority
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                 <Layers size={48} className="text-indigo-400 mb-3 animate-pulse" />
