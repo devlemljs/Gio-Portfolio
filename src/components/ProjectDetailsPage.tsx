@@ -182,7 +182,6 @@ export default function ProjectDetailsPage({
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                 <Layout size={48} className="text-indigo-400 mb-3 animate-pulse" />
                 <p className="font-sans text-lg font-black text-slate-800 uppercase tracking-wider">Amazon System Overview</p>
-                <p className="font-mono text-xs text-slate-400 mt-1">Source: {amazon}</p>
               </div>
             </div>
 
@@ -341,7 +340,6 @@ export default function ProjectDetailsPage({
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                     <Search size={48} className="text-indigo-400 mb-3 animate-pulse" />
                     <p className="font-sans text-lg font-black text-slate-800 uppercase tracking-wider">Helium 10 &amp; SEO Tools</p>
-                    <p className="font-mono text-xs text-slate-400 mt-1">Source: {helium}</p>
                   </div>
                 </div>
 
@@ -609,7 +607,6 @@ export default function ProjectDetailsPage({
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                   <FileSpreadsheet size={48} className="text-indigo-400 mb-3 animate-pulse" />
                   <p className="font-sans text-lg font-black text-slate-800 uppercase tracking-wider">Inventory System Overview</p>
-                  <p className="font-mono text-xs text-slate-400 mt-1">Source: {tracker1}</p>
                 </div>
               </div>
               <div className="bg-slate-100 rounded-2xl overflow-hidden aspect-video flex items-center justify-center border border-slate-200 relative">
@@ -622,7 +619,6 @@ export default function ProjectDetailsPage({
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                   <BarChart2 size={48} className="text-indigo-400 mb-3 animate-pulse" />
                   <p className="font-sans text-lg font-black text-slate-800 uppercase tracking-wider">Stock &amp; SRP Movement Log</p>
-                  <p className="font-mono text-xs text-slate-400 mt-1">Source: {tracker2}</p>
                 </div>
               </div>
             </div>
@@ -754,7 +750,6 @@ export default function ProjectDetailsPage({
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-slate-50/50">
                 <Layers size={48} className="text-indigo-400 mb-3 animate-pulse" />
                 <p className="font-sans text-lg font-black text-slate-800 uppercase tracking-wider">Brand Design Overview</p>
-                <p className="font-mono text-xs text-slate-400 mt-1">Source: {design}</p>
               </div>
             </div>
 
@@ -817,9 +812,6 @@ export default function ProjectDetailsPage({
                         <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                           Social {i + 1}
                         </span>
-                        <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                          Source: {src}
-                        </span>
                       </div>
                       <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <ExternalLink size={24} className="text-white mb-2" />
@@ -872,9 +864,6 @@ export default function ProjectDetailsPage({
                         <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                           Poster 1
                         </span>
-                        <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                          Source: {poster1}
-                        </span>
                       </div>
                       <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <ExternalLink size={24} className="text-white mb-2" />
@@ -903,9 +892,6 @@ export default function ProjectDetailsPage({
                         <ImageIcon size={24} className="text-indigo-400 mb-1.5 animate-pulse" />
                         <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                           Poster 2
-                        </span>
-                        <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                          Source: {poster2}
                         </span>
                       </div>
                       <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -938,9 +924,6 @@ export default function ProjectDetailsPage({
                       <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                         Poster 3
                       </span>
-                      <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                        Source: {poster3}
-                      </span>
                     </div>
                     <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <ExternalLink size={24} className="text-white mb-2" />
@@ -970,9 +953,6 @@ export default function ProjectDetailsPage({
                       <ImageIcon size={24} className="text-indigo-400 mb-1.5 animate-pulse" />
                       <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                         Poster 4
-                      </span>
-                      <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                        Source: {poster4}
                       </span>
                     </div>
                     <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1015,9 +995,6 @@ export default function ProjectDetailsPage({
                       <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                         Signage 1
                       </span>
-                      <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                        Source: {signage1}
-                      </span>
                     </div>
                     <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <ExternalLink size={24} className="text-white mb-2" />
@@ -1047,9 +1024,6 @@ export default function ProjectDetailsPage({
                       <ImageIcon size={24} className="text-indigo-400 mb-1.5 animate-pulse" />
                       <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                         Signage 2
-                      </span>
-                      <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                        Source: {signage2}
                       </span>
                     </div>
                     <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1082,9 +1056,6 @@ export default function ProjectDetailsPage({
                         <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                           Signage 3
                         </span>
-                        <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                          Source: {signage3}
-                        </span>
                       </div>
                       <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <ExternalLink size={24} className="text-white mb-2" />
@@ -1113,9 +1084,6 @@ export default function ProjectDetailsPage({
                         <ImageIcon size={24} className="text-indigo-400 mb-1.5 animate-pulse" />
                         <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                           Signage 4
-                        </span>
-                        <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                          Source: {signage4}
                         </span>
                       </div>
                       <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1156,9 +1124,6 @@ export default function ProjectDetailsPage({
                         <ImageIcon size={24} className="text-indigo-400 mb-1.5 animate-pulse" />
                         <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                           Merch {i + 1}
-                        </span>
-                        <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                          Source: {src}
                         </span>
                       </div>
                       <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1211,9 +1176,6 @@ export default function ProjectDetailsPage({
                         <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                           Logo {i + 1}
                         </span>
-                        <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                          Source: {src}
-                        </span>
                       </div>
                       <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <ExternalLink size={24} className="text-white mb-2" />
@@ -1256,9 +1218,6 @@ export default function ProjectDetailsPage({
                       <Sparkles size={24} className="text-indigo-400 mb-1.5 animate-pulse" />
                       <span className="font-sans text-xs font-black text-slate-850 uppercase tracking-wider">
                         Touchpoint
-                      </span>
-                      <span className="font-mono text-[9px] text-slate-500 mt-0.5 truncate max-w-full px-1">
-                        Source: {touchpoint}
                       </span>
                     </div>
                     <div className="absolute inset-0 bg-slate-900/85 z-20 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
