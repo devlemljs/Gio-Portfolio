@@ -82,6 +82,11 @@ const logos = [logo1, logo2, logo3];
 
 const touchpoint = 'projects/touchpoint.webp';
 
+// Module-level cache — persists across component mounts/unmounts,
+// so an image that already loaded once skips the fade-in and
+// placeholder on subsequent renders (e.g. navigating back to a project).
+const loadedImagesCache = new Set<string>();
+
 const OptimizedImage = ({
   src,
   alt,
@@ -99,22 +104,21 @@ const OptimizedImage = ({
   height?: number;
   [key: string]: any;
 }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(() => loadedImagesCache.has(src));
 
   return (
     <img
       src={src}
       alt={alt}
-      // Hero/above-the-fold images (priority=true) load eagerly with high
-      // fetch priority so they don't get deprioritized behind other
-      // requests, which is what was inflating LCP. Everything else stays
-      // lazy since it's below the fold.
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : "auto"}
       decoding={priority ? "sync" : "async"}
       width={width}
       height={height}
-      onLoad={() => setIsLoaded(true)}
+      onLoad={() => {
+        loadedImagesCache.add(src);
+        setIsLoaded(true);
+      }}
       onError={(e) => {
         e.currentTarget.style.display = "none";
       }}
