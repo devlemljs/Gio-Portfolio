@@ -50,7 +50,7 @@ const tracker1 = 'projects/tracker1.webp';
 const tracker2 = 'projects/tracker2.webp';
 
 // Project 3 Placeholders
-const design = 'projects/design.png';
+const design = 'projects/design.webp';
 const social1 = 'projects/social1.webp';
 const social2 = 'projects/social2.webp';
 const social3 = 'projects/social3.webp';
