@@ -33,21 +33,21 @@ import {
 } from "lucide-react";
 import { motion } from "motion/react";
 
-const amazon = 'projects/amazon.png';
-const helium = 'projects/helium.png';
-const IP1 = 'projects/IP1.png';
-const IP2 = 'projects/IP2.png';
-const IP3 = 'projects/IP3.png';
-const IP4 = 'projects/IP4.png';
-const IP5 = 'projects/IP5.png';
-const IP6 = 'projects/IP6.png';
-const IP7 = 'projects/IP7.png';
+const amazon = 'projects/amazon.webp';
+const helium = 'projects/helium.webp';
+const IP1 = 'projects/IP1.webp';
+const IP2 = 'projects/IP2.webp';
+const IP3 = 'projects/IP3.webp';
+const IP4 = 'projects/IP4.webp';
+const IP5 = 'projects/IP5.webp';
+const IP6 = 'projects/IP6.webp';
+const IP7 = 'projects/IP7.webp';
 
 const imagePlannings = [IP1, IP2, IP3, IP4, IP5, IP6, IP7];
 
 // Project 2 Placeholders
-const tracker1 = 'projects/tracker1.png';
-const tracker2 = 'projects/tracker2.png';
+const tracker1 = 'projects/tracker1.webp';
+const tracker2 = 'projects/tracker2.webp';
 
 // Project 3 Placeholders
 const design = 'projects/design.png';

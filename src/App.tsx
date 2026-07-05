@@ -63,19 +63,19 @@ import { Project } from "./types";
 import Lightfall from "./components/Lightfall";
 import ProjectDetailsPage from "./components/ProjectDetailsPage";
 
-const profile = 'images/gio_profile.png';
+const profile = 'images/gio_profile.webp';
 const facebook = "/tools/facebook.svg";
 const instagram = "/tools/instagram.svg";
 const linkedin = "/tools/linkedin.svg";
 
-const page1 = 'files/Gio Anthony Sabucido Resume1.png';
-const page2 = 'files/Gio Anthony Sabucido Resume2.png';
-const page3 = 'files/Gio Anthony Sabucido Resume3.png';
+const page1 = 'files/Gio Anthony Sabucido Resume1.webp';
+const page2 = 'files/Gio Anthony Sabucido Resume2.webp';
+const page3 = 'files/Gio Anthony Sabucido Resume3.webp';
 const resume = 'files/Gio Anthony Sabucido Resume.pdf';
 
-const amazon = 'projects/amazon.png';
-const tracker = 'projects/tracker.png';
-const design = 'projects/design.png';
+const amazon = 'projects/amazon.webp';
+const tracker = 'projects/tracker.webp';
+const design = 'projects/design.webp';
 
 const FadedGridBackground = () => {
   return (
