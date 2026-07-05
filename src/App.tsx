@@ -1,46 +1,30 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
-  Sun,
-  Moon,
   MapPin,
   Mail,
   Phone,
-  Linkedin,
   FileText,
   Download,
   Check,
   Sparkles,
-  Star,
-  ChevronRight,
-  ChevronLeft,
   X,
   ArrowUpRight,
-  Zap,
-  Target,
-  ArrowRight,
   LineChart,
   Layers,
   Palette,
   CheckSquare,
   ShoppingBag,
   Bot,
-  Clock,
   Code2,
-  Users,
   ClipboardList,
-  Briefcase,
   Award,
-  Flame,
   CheckCircle2,
   Video,
-  ExternalLink,
   Laptop,
   Eye,
   Search,
   ZoomIn,
   ZoomOut,
-  Facebook,
-  Instagram,
   Image as ImageIcon,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
@@ -531,6 +515,9 @@ export default function App() {
                   src={profile}
                   alt="Gio Anthony S. Sabucido (Yong)"
                   referrerPolicy="no-referrer"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="sync"
                   className="w-full h-full object-contain"
                 />
               </div>
